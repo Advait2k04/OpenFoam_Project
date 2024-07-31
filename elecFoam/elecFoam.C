@@ -114,9 +114,9 @@ int main(int argc, char *argv[])
         
         solve
         (
-            fvm::ddt(H2)
-            + fvm::div(phi, H2)
-            - fvm::laplacian(DT, H2)
+            fvm::ddt(S1)
+            + fvm::div(phi, S1)
+            - fvm::laplacian(DT, S1)
         );
         
 
